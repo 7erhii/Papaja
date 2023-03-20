@@ -1,0 +1,16 @@
+body {
+	background-image: url(/src/assets/images/bg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.wrapper {
+	margin: 0 auto;
+	max-width: 1512px;
+	padding: 20px 15px;
+	background: linear-gradient(
+		66deg,
+		rgba(46, 50, 87, 1) 0%,
+		rgba(42, 46, 82, 1) 100%
+	);
+}
