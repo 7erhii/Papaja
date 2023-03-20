@@ -1,2 +1,5 @@
+//- mixin image(file)
+//-   img.src(src=require(`../assets/images/${file}`), alt="")
+
 mixin image(file)
-  img.src(src=require(`../assets/images/${file}`), alt="")
+	img(src=require(`../assets/images/${file}`), alt='', class!=attributes.class)

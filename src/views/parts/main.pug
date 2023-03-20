@@ -1,0 +1,126 @@
+//- include parts/aside
+main.main
+	.aside
+		.burger 
+			.burger__control 
+				.burger__control-btn
+					<svg width="19" height="19" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M5.79053 9.21094C6.30322 9.21094 6.71338 8.80078 6.71338 8.29541C6.71338 7.78271 6.30322 7.37256 5.79053 7.37256C5.27783 7.37256 4.86768 7.78271 4.86768 8.29541C4.86768 8.80078 5.27783 9.21094 5.79053 9.21094ZM9.02783 8.88135H19.0327C19.3623 8.88135 19.626 8.625 19.626 8.29541C19.626 7.9585 19.3623 7.70215 19.0327 7.70215H9.02783C8.69092 7.70215 8.43457 7.9585 8.43457 8.29541C8.43457 8.625 8.69092 8.88135 9.02783 8.88135ZM5.79053 13.6421C6.30322 13.6421 6.71338 13.2319 6.71338 12.7192C6.71338 12.2065 6.30322 11.7964 5.79053 11.7964C5.27783 11.7964 4.86768 12.2065 4.86768 12.7192C4.86768 13.2319 5.27783 13.6421 5.79053 13.6421ZM9.02783 13.3125H19.0327C19.3623 13.3125 19.626 13.0488 19.626 12.7192C19.626 12.3896 19.3623 12.1333 19.0327 12.1333H9.02783C8.69092 12.1333 8.43457 12.3896 8.43457 12.7192C8.43457 13.0488 8.69092 13.3125 9.02783 13.3125ZM5.79053 18.0732C6.30322 18.0732 6.71338 17.6558 6.71338 17.1504C6.71338 16.6377 6.30322 16.2275 5.79053 16.2275C5.27783 16.2275 4.86768 16.6377 4.86768 17.1504C4.86768 17.6558 5.27783 18.0732 5.79053 18.0732ZM9.02783 17.7363H19.0327C19.3623 17.7363 19.626 17.48 19.626 17.1504C19.626 16.8135 19.3623 16.5571 19.0327 16.5571H9.02783C8.69092 16.5571 8.43457 16.8135 8.43457 17.1504C8.43457 17.48 8.69092 17.7363 9.02783 17.7363Z" fill="#EBEBF5" fill-opacity="0.6"/>
+					</svg>
+			.burger__logo
+				.burger__logo-img
+					+image('icons/burger-logo.svg')
+		.menu 
+			ul.menu__list 
+				li.menu__list-item
+					a(href='#') 
+						.menu__element-active
+							.menu__element-active-img
+								.menu__element-active-img-bg 
+									+image('icons/menu-home.svg')
+							.menu__element-text Home
+				li.menu__list-item
+					a(href='#') 
+						.menu__element
+							.menu__element-img
+								+image('icons/paly.svg')
+							.menu__element-text Shorts
+				li.menu__list-item
+					a(href='#') 
+						.menu__element
+							.menu__element-img
+								+image('icons/menu-subs.svg')
+							.menu__element-text Subscription
+				li.menu__list-item
+					a(href='#') 
+						.menu__element
+							.menu__element-img
+								+image('icons/menu-music.svg')
+								//- <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								//- <path d="M4.9917 18.022H19.6108C20.9878 18.022 21.7349 17.2676 21.7349 15.8979V7.4165C21.7349 6.03955 20.9878 5.29248 19.6108 5.29248H4.9917C3.61475 5.29248 2.86768 6.03955 2.86768 7.4165V15.8979C2.86768 17.2676 3.61475 18.022 4.9917 18.022ZM5.12354 16.4473C4.66943 16.4473 4.44238 16.2275 4.44238 15.7661V7.54102C4.44238 7.07959 4.66943 6.86719 5.12354 6.86719H19.4863C19.9404 6.86719 20.1675 7.07959 20.1675 7.54102V15.7661C20.1675 16.2275 19.9404 16.4473 19.4863 16.4473H5.12354ZM14.4546 10.4414C14.8354 10.3462 14.9453 10.251 14.9453 9.81885V8.3833C14.9453 8.07568 14.8135 7.94385 14.4106 8.04639L12.2793 8.57373C11.8984 8.66895 11.8105 8.75684 11.8105 9.20361V12.3457C11.8105 12.6533 11.7886 12.6973 11.4443 12.7925L10.7778 12.9609C10.0674 13.1514 9.53271 13.5762 9.53271 14.2793C9.53271 14.9238 10.0234 15.3853 10.7705 15.3853C11.8325 15.3853 12.5576 14.6235 12.5576 13.5469V11.1958C12.5576 10.9468 12.6089 10.8882 12.7554 10.8589L14.4546 10.4414ZM8.50732 20.6367H16.0952C16.498 20.6367 16.813 20.3071 16.813 19.9263C16.813 19.5381 16.498 19.2012 16.0952 19.2012H8.50732C8.11182 19.2012 7.78955 19.5381 7.78955 19.9263C7.78955 20.3071 8.11182 20.6367 8.50732 20.6367Z" fill="#EBEBF5" fill-opacity="0.6"/>
+								//- </svg>
+							.menu__element-text Music
+		.chanel
+			p.chanel__subheader MY CHANEL
+				ul.menu__list 
+					li.menu__list-item
+						a(href='#') 
+							.menu__element
+								.menu__element-img
+									+image('icons/chanel-lib.svg')
+								.menu__element-text Library
+					li.menu__list-item
+						a(href='#') 
+							.menu__element
+								.menu__element-img
+									+image('icons/chanel-hist.svg')
+								.menu__element-text History
+					li.menu__list-item
+						a(href='#') 
+							.menu__element
+								.menu__element-img
+									+image('icons/chanel-video.svg')
+								.menu__element-text Your Videos
+					li.menu__list-item
+						a(href='#') 
+							.menu__element
+								.menu__element-img
+									+image('icons/chanel-later.svg')
+								.menu__element-text Watch Later
+					li.menu__list-item
+						a(href='#') 
+							.menu__element
+								.menu__element-img
+									+image('icons/chanel-later.svg')
+								.menu__element-text Downloads
+					li.menu__list-item
+						a(href='#') 
+							.menu__element
+								.menu__element-img
+									+image('icons/chanel-more.svg')
+								.menu__element-text Show More
+		.subsc
+			p.subsc__subheader SUBSCRIPTIONS
+				ul.menu__list 
+					li.menu__list-item
+						a(href='#') 
+							.menu__element
+								.menu__element-img
+									+image('icons/subs-design.svg').subscr__img-bg
+								.menu__element-text DesignCode
+					li.menu__list-item
+						a(href='#') 
+							.menu__element
+								.menu__element-img
+									+image('icons/subs-figma.svg').subscr__img-bg
+								.menu__element-text Figma
+					li.menu__list-item
+						a(href='#') 
+							.menu__element
+								.menu__element-img
+									+image('icons/subs-sketch.svg').subscr__img-bg
+								.menu__element-text Sketch
+					li.menu__list-item
+						a(href='#') 
+							.menu__element
+								.menu__element-img
+									+image('icons/subs-splin.svg').subscr__img-bg
+								.menu__element-text Spline
+	.content
+		.header
+			.header__content
+				ul.header__content-list
+					li.header__content-item All
+					li.header__content-item Gaming
+					li.header__content-item Thoughts
+					li.header__content-item Music
+					li.header__content-item Thrillers
+					li.header__content-item Mixes
+					li.header__content-item Avatar
+					li.header__content-item Film criticisma
+					li.header__content-item Korean dramas
+					li.header__content-item Characters
+					li.header__content-item Eating
+
+		.page
+			.page__content
