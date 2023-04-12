@@ -1,4 +1,19 @@
-//- mixin li-line(icon, text)(class="name")
-//- 	li
-//- 		i(class=icon)
-//- 		| #{ text }
+//- mixin card(image, subImage, title, autor)
+//- 	.card__item
+//- 		.card__image 
+//- 			img(src=require(`..assets/images/titles${image}`), alt='', class!=attributes.class)
+//- 		.card__content 
+//- 			.card__logo 
+//- 				img(
+//- 					src=require(`..assets/images/titles${subImage}`),
+//- 					alt='',
+//- 					class!=attributes.class
+//- 				)
+//- 			.card__text
+//- 				.card__title 
+//- 					p= title
+//- 				.card__autor 
+//- 					p= autor
+//- 				.card__views 14k views - 1 month ago
+
+//- //+card('image.png', 'subImage.png', 'title', 'Autor')

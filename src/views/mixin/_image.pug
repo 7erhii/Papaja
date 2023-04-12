@@ -3,3 +3,27 @@
 
 mixin image(file)
 	img(src=require(`../assets/images/${file}`), alt='', class!=attributes.class)
+
+mixin card(image, subImage, title, autor)
+	.card__item
+		.card__image 
+			img(
+				src=require(`../assets/images/titles/${image}`),
+				alt='',
+				class!=attributes.class
+			)
+		.card__content 
+			.card__logo 
+				img(
+					src=require(`../assets/images/subtitle/${subImage}`),
+					alt='',
+					class!=attributes.class
+				)
+			.card__text
+				.card__title 
+					p= title
+				.card__author 
+					p= autor
+				.card__views 14k views - 1 month ago
+
+//+card('image.png', 'subImage.png', 'title', 'Autor')
