@@ -1,3 +1,7 @@
+body {
+	background-color: rgb(44, 47, 81);
+	padding-top: env(safe-area-inset-top);
+}
 .main {
 	display: flex;
 }

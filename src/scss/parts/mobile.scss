@@ -168,6 +168,22 @@
 	}
 	.card {
 		&__item {
+			max-width: 300px;
+		}
+		&__image img {
+			max-width: 300px;
+		}
+	}
+	.card__logo {
+		display: flex;
+	}
+}
+@media (max-width: 390px) {
+	.wrapper {
+		padding: 15px 5px;
+	}
+	.card {
+		&__item {
 			max-width: 260px;
 		}
 		&__image img {
