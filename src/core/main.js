@@ -7,15 +7,19 @@ const genersClose = document.querySelector('.header__geners-close');
 const logo = document.querySelector('.name__logo');
 const header = document.querySelector('.header');
 const nameLogo = document.querySelector('.name');
+//----------------------------------------------------------------
+const cards = document.querySelector('.cards__content');
 
 menuToggle.addEventListener('click', function () {
 	if (menuToggle.checked) {
-		console.log(23);
-		aside.style.display = 'block';
+		// aside.style.display = 'block';
 		aside.style.position = 'absolute';
-	} else {
-		console.log(30);
-		aside.style.display = 'none';
+		aside.classList.add('js-show-aside');
+	}
+	if (!menuToggle.checked) {
+		// aside.style.display = 'none';
+		aside.style.position = 'inherit';
+		aside.classList.remove('js-show-aside');
 	}
 });
 

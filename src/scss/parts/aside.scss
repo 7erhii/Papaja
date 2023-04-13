@@ -1,6 +1,5 @@
 .aside {
-	// display: flex;
-	// flex-direction: row;
+	display: block;
 	height: 993px;
 	width: 233px;
 	background: linear-gradient(
@@ -8,6 +7,9 @@
 		rgba(46, 51, 90, 1) 0%,
 		rgba(28, 27, 51, 1) 100%
 	);
+}
+.js-show-aside {
+	display: block;
 }
 
 .name {
@@ -21,14 +23,11 @@
 		height: 56px;
 		&-btn {
 			margin: 0 auto;
-			// width: 19px;
-			// height: 19px;
 		}
 	}
 
 	&__logo {
 		flex-grow: 1;
-		// position: absolute;
 		left: 60px;
 		&-img {
 			display: flex;
@@ -38,7 +37,6 @@
 }
 
 .menu {
-	// display: flex;
 	&__list {
 	}
 }
@@ -157,16 +155,7 @@
 		display: flex;
 		border-top: none;
 		border-bottom: none;
-		// &::before {
-		// 	position: absolute;
-		// 	border-bottom: none;
-		// 	background-color: red;
-		// 	height: 30px;
-		// 	width: 30px;
-		// 	border-radius: 50%;
-		// 	top: 50%;
-		// 	left: 20px;
-		// 	transform: translate(-50%, -50%);
+
 		// }
 	}
 	&-img {
