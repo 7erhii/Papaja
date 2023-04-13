@@ -61,6 +61,7 @@
 	}
 	.aside {
 		display: none;
+		margin-top: 0;
 	}
 	.header__aside-vis {
 		display: flex;
@@ -69,8 +70,9 @@
 	.header__logo-img {
 		display: flex;
 	}
-	.name__logo {
-		display: none;
+
+	.mobile-logo {
+		display: flex;
 	}
 }
 

@@ -11,10 +11,15 @@
 	flex-grow: 1;
 }
 
-.header__logo-img {
+// .header__logo-img {
+// 	display: none;
+// 	justify-content: space-around;
+// 	margin: 5px auto 15px;
+// }
+.mobile-logo {
 	display: none;
 	justify-content: space-around;
-	margin: 5px auto 15px;
+	padding: 0 0 15px;
 }
 
 .header {
