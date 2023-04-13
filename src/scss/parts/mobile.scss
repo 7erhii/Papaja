@@ -45,6 +45,11 @@
 		}
 	}
 }
+@media (max-width: 1040px) {
+	.page__serch {
+		margin-left: 250px;
+	}
+}
 
 @media (max-width: 970px) {
 	.header__content {
@@ -73,6 +78,10 @@
 
 	.mobile-logo {
 		display: flex;
+	}
+
+	.page__serch {
+		margin: 0 auto;
 	}
 }
 
