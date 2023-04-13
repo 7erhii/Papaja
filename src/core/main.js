@@ -17,9 +17,15 @@ menuToggle.addEventListener('click', function () {
 });
 
 genersBtn.addEventListener('click', function () {
-	console.log(22);
 	genersList.style.display = 'block';
 	genersBtn.style.display = 'none';
 	burger.style.display = 'none';
 	genersClose.style.display = 'block';
+});
+
+genersClose.addEventListener('click', function () {
+	genersList.style.display = 'none';
+	genersBtn.style.display = 'block';
+	burger.style.display = 'block';
+	genersClose.style.display = 'none';
 });

@@ -98,6 +98,16 @@
 			text-decoration: underline;
 		}
 	}
+	.header__content-item {
+		// background: red;
+		&:hover {
+			line-height: 12px;
+			// text-decoration: underline;
+		}
+		&::before {
+			left: 20px;
+		}
+	}
 }
 
 @media (max-width: 690px) {
