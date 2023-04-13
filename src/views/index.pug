@@ -9,17 +9,18 @@ html(lang='en')
 		link(
 			rel='shortcut icon',
 			href=require(`../assets/images/favicon.png`),
-			type='image/png'
-		)
+			type='image/png')
 		title Empty Project
 
 		script(
 			src='https://kit.fontawesome.com/23b8fb4e42.js',
-			crossorigin='anonymous'
-		)
+			crossorigin='anonymous')
 
 	body
 		.wrapper
+			.header__logo
+			.header__logo-img
+				+image('icons/burger-logo.svg')
 			include parts/control
 			include parts/main
-			//- include parts/aside
+	//- include parts/aside

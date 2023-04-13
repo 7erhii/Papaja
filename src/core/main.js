@@ -4,6 +4,9 @@ const aside = document.querySelector('.aside');
 const genersList = document.querySelector('.header__content-list');
 const burger = document.querySelector('.header__aside-vis');
 const genersClose = document.querySelector('.header__geners-close');
+const logo = document.querySelector('.name__logo');
+const header = document.querySelector('.header');
+const nameLogo = document.querySelector('.name');
 
 menuToggle.addEventListener('click', function () {
 	if (menuToggle.checked) {

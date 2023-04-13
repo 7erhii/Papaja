@@ -11,6 +11,12 @@
 	flex-grow: 1;
 }
 
+.header__logo-img {
+	display: none;
+	justify-content: space-around;
+	margin: 5px auto 15px;
+}
+
 .header {
 	// display: flex;
 	flex-grow: 1;
@@ -86,6 +92,9 @@
 		&-magnifier {
 			padding: 10px;
 		}
+	}
+	&__info {
+		margin-left: 15px;
 	}
 }
 // .cards {

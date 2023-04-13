@@ -66,6 +66,9 @@
 		display: flex;
 		position: relative;
 	}
+	.header__logo-img {
+		display: flex;
+	}
 }
 
 @media (max-width: 844px) {
@@ -156,5 +159,19 @@
 	}
 	.card__logo {
 		display: flex;
+	}
+}
+
+@media (min-width: 971px) {
+	.header__content {
+		border-radius: 8px;
+	}
+
+	.aside {
+		display: block;
+	}
+	.header__aside-vis {
+		display: none;
+		position: absolute;
 	}
 }
