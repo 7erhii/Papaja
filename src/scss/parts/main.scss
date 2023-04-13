@@ -34,18 +34,59 @@
 			justify-content: space-between;
 		}
 		&-item {
+			position: relative;
 			display: flex;
 			justify-content: space-between;
 			// background: red;
 			margin: 13px 0;
 			padding: 10px;
 			white-space: nowrap;
+			&:hover {
+				line-height: 8px;
+				// text-decoration: underline;
+				&::before {
+					opacity: 1;
+				}
+			}
+			&::before {
+				content: '';
+				position: absolute;
+				top: 90%;
+				left: 50%;
+				right: 50%;
+				transform: translateY(-50%);
+				transform: translateX(-50%);
+
+				width: 20px;
+				height: 6px;
+				border-radius: 10px;
+				background-color: rgb(123, 45, 133);
+				opacity: 0;
+				transition: opacity 0.2s ease-in-out;
+			}
 		}
+
+		& button {
+			display: none;
+			text-transform: uppercase;
+			color: #cbcbcb;
+			// margin: 0 auto;
+			left: 30px;
+			cursor: pointer;
+		}
+	}
+	&__geners-close {
+		margin: 10px;
 	}
 }
 
 .page {
 	// flex-grow: 1;
+	&__serch {
+		&-magnifier {
+			padding: 10px;
+		}
+	}
 }
 // .cards {
 // }
@@ -72,6 +113,13 @@
 	&__item {
 		margin: 10px;
 		// border-radius: 20px;
+		&:hover {
+			border-radius: 25px;
+			box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+				rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+				rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+		}
+		cursor: pointer;
 	}
 	&__logo {
 		display: flex;
@@ -136,15 +184,19 @@
 }
 
 .menu__btn {
-	display: flex; /* используем flex для центрирования содержимого */
-	align-items: center; /* центрируем содержимое кнопки */
-	position: fixed;
-	top: 20px;
-	left: 20px;
+	display: flex;
+	align-items: center;
+	// position: fixed;
+	top: 0px;
+	left: 0px;
 	width: 36px;
 	height: 36px;
 	cursor: pointer;
 	z-index: 1;
+}
+
+.menu__btn > span {
+	left: 10px;
 }
 
 .menu__btn > span,
@@ -152,11 +204,12 @@
 .menu__btn > span::after {
 	display: block;
 	position: absolute;
-	top: 70px;
-	width: 100%;
+	top: 24px;
+	width: 30px;
 	height: 2px;
-	background-color: #616161;
+	background-color: #c6c3c3;
 	transition: 0.3s;
+	// left: 8px;
 }
 .menu__btn > span::before {
 	content: '';
@@ -165,4 +218,33 @@
 .menu__btn > span::after {
 	content: '';
 	top: 8px;
+}
+
+#menu__toggle:checked ~ .menu__btn > span {
+	transform: rotate(45deg);
+}
+
+#menu__toggle:checked ~ .menu__btn > span::before {
+	top: 0;
+	transform: rotate(0);
+}
+
+#menu__toggle:checked ~ .menu__btn > span::after {
+	top: 0;
+	transform: rotate(90deg);
+}
+
+// #menu__toggle:checked  .menu__box {
+// 	visibility: visible;
+// 	left: 0;
+// }
+
+.header__geners-close {
+	display: none;
+	color: rgb(175, 175, 175);
+}
+
+.header__geners-close-img {
+	width: 35px;
+	height: 35px;
 }

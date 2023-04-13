@@ -10,7 +10,7 @@
 	);
 }
 
-.burger {
+.name {
 	display: flex;
 	align-items: center;
 	&__control {
@@ -28,7 +28,11 @@
 
 	&__logo {
 		flex-grow: 1;
+		// position: absolute;
+		left: 60px;
 		&-img {
+			display: flex;
+			justify-content: space-around;
 		}
 	}
 }
