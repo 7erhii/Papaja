@@ -119,6 +119,9 @@
 }
 
 @media (max-width: 690px) {
+	.control {
+		margin-left: 20px;
+	}
 	.card {
 		&__item {
 			max-width: 260px;
