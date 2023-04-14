@@ -7,6 +7,8 @@ const genersClose = document.querySelector('.header__geners-close');
 const logo = document.querySelector('.name__logo');
 const header = document.querySelector('.header');
 const nameLogo = document.querySelector('.name');
+const asideJs = document.querySelector('.js-show-aside');
+
 //----------------------------------------------------------------
 const cards = document.querySelector('.cards__content');
 
@@ -33,6 +35,6 @@ genersBtn.addEventListener('click', function () {
 genersClose.addEventListener('click', function () {
 	genersList.style.display = 'none';
 	genersBtn.style.display = 'block';
-	burger.style.display = 'block';
+	burger.style.display = 'flex';
 	genersClose.style.display = 'none';
 });
